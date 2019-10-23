@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/*  声明css绝对定位的混合 */
+/* 声明背景图片的css混合 */
+body {
+  background: #eaebef; }
+
+header {
+  width: 750px;
+  position: fixed;
+  top: 0px;
+  /* left: 0px; */
+  z-index: 9999;
+  padding: 20px 0px 25px;
+  /*线性渐变*/
+  background: linear-gradient(#ececec, #fff);
+  border-bottom: 2px solid #d9d9d9; }
+  header .header_lis {
+    width: 100%;
+    display: flex; }
+    header .header_lis li {
+      flex-basis: 15%;
+      text-align: center; }
+    header .header_lis li:first-of-type a {
+      font-size: 72px;
+      color: #fd540e; }
+    header .header_lis li:nth-of-type(2) {
+      flex: 1;
+      font-size: 32px;
+      line-height: 72px; }
+
+/* header end */
+.center {
+  width: 100%;
+  float: left;
+  margin-top: 148px;
+  background: #fff; }
+  .center .center_img {
+    width: 100%;
+    border-bottom: 2px solid #d9d9d9;
+    text-align: center; }
+
+/* center end */
+.center_price {
+  background: #fff;
+  width: 100%;
+  float: left;
+  padding: 20px 0px;
+  border-bottom: 2px solid #d9d9d9; }
+  .center_price .center_box {
+    width: 90%;
+    margin: 0px auto; }
+    .center_price .center_box .perice h2 {
+      font-size: 37px; }
+    .center_price .center_box .perice .perice_uls {
+      margin-top: 45px; }
+      .center_price .center_box .perice .perice_uls span:first-of-type {
+        color: red;
+        font-size: 37px; }
+      .center_price .center_box .perice .perice_uls span:last-of-type {
+        color: #cecece;
+        font-size: 37px;
+        text-decoration: line-through;
+        margin-left: 10px; }
+
+/* center_box end */
+.pingpai {
+  background: #fff;
+  padding: 20px 0px;
+  border-bottom: 2px solid #d9d9d9;
+  width: 100%;
+  float: left; }
+  .pingpai .pingpai_uls {
+    width: 90%;
+    margin: 0px auto;
+    display: flex; }
+    .pingpai .pingpai_uls li {
+      flex-basis: 20%;
+      color: #9e9e9e;
+      font-size: 30px; }
+    .pingpai .pingpai_uls li:last-of-type {
+      font-size: 28px;
+      color: #000;
+      flex: 1; }
+
+/* pingpai end */
+.quick {
+  background: #fff;
+  width: 100%;
+  float: left;
+  padding: 37px 0px;
+  position: relative; }
+  .quick .quick_bg {
+    width: 90%;
+    margin: 0px auto;
+    text-align: center; }
+  .quick .quick_box {
+    width: 100%;
+    position: absolute;
+    top: 273px;
+    left: 0px;
+    height: 150px;
+    background-image: url("../images/quick_box_bg.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 100%; }
+    .quick .quick_box .quick_box_left {
+      width: 100%;
+      background: #fff;
+      position: absolute;
+      bottom: 0px;
+      height: 85px; }
+      .quick .quick_box .quick_box_left .quick_box_left_ra {
+        width: 90%;
+        margin: 0px auto; }
+        .quick .quick_box .quick_box_left .quick_box_left_ra span {
+          font-size: 30px;
+          text-align: center;
+          line-height: 58px;
+          margin-top: 10px; }
+        .quick .quick_box .quick_box_left .quick_box_left_ra .move_car {
+          width: 124px;
+          height: 124px;
+          background-image: url("../images/move_car.png");
+          background-position: top left;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          position: absolute;
+          top: -63%;
+          left: 80.8%;
+          border-radius: 100%; }
+        .quick .quick_box .quick_box_left .quick_box_left_ra span:nth-of-type(2) {
+          border: 1px solid #cecccc;
+          width: 60px;
+          height: 60px;
+          color: red;
+          border-radius: 50%;
+          margin-left: 10px; }
+        .quick .quick_box .quick_box_left .quick_box_left_ra span:nth-of-type(3) {
+          color: #727272;
+          margin-left: 10px; }
+        .quick .quick_box .quick_box_left .quick_box_left_ra span:last-of-type {
+          width: 60px;
+          height: 60px;
+          color: red;
+          border-radius: 50%;
+          border: 1px solid #cecccc;
+          margin-left: 10px; }
+
+/*# sourceMappingURL=index4.css.map */

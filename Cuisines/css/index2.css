@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/*声明 css相对定位的混合 */
+/*  声明css绝对定位的混合 */
+/* 声明背景图片的css混合 */
+/* 底部固定位 */
+header {
+  width: 100%;
+  background-color: #582349;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row; }
+  header div {
+    flex-basis: 20%;
+    text-align: center;
+    line-height: 1px; }
+    header div .header_titel {
+      font-size: 40px;
+      color: #fff; }
+  header div:nth-of-type(2) {
+    flex: 1; }
+  header:after {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    overflow: hidden;
+    clear: both; }
+
+.container {
+  margin-top: 170px;
+  width: 100%; }
+  .container .container_box {
+    width: 70%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column; }
+    .container .container_box div {
+      flex-basis: 100%;
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 19px;
+      line-height: 25px; }
+
+/* container */
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 40px;
+  left: 0px; }
+  footer .footer_box {
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 19px;
+    line-height: 25px; }
+
+/*# sourceMappingURL=index2.css.map */

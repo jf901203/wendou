@@ -1,0 +1,108 @@
+
+
+/*声明 css相对定位的混合 */
+
+@mixin pr(){
+   
+   position: relative;
+   
+
+}
+
+/*  声明css绝对定位的混合 */
+
+@mixin pa($y,$x){
+
+	position: absolute;
+	top: $y;
+	left:$x;
+}
+
+/* 声明背景图片的css混合 */
+
+@mixin bgImg($url,$y,$x,$wid){
+
+	background-image: url();
+	background-position: $y $x;
+	background-repeat: no-repeat;
+	background-size: $wid;
+
+
+}
+
+@mixin pf($y:0,$x:0){
+
+	position: fixed;
+	top: $y;
+	left: $x;
+}
+header{
+
+	width:100%;
+	background-color: #582349;
+	
+    @include pf();
+     padding-top: 60px;
+	display: flex;
+	flex-direction:row;
+
+
+	div{
+        
+     flex-basis:20%;
+     text-align: center;
+     line-height: 1px;
+     
+    .header_titel{
+    	font-size: 40px;
+    	color: #fff;
+    }
+
+	}
+	div:nth-of-type(2){
+
+		flex:1;
+	}
+
+	 &:after{
+
+   	  content:"";
+   	  width: 0;
+   	  height: 0;
+   	  display: block;
+   	  overflow: hidden;
+   	  clear: both;
+   }
+}
+
+.container{
+    float: left;
+	width: 100%;
+	display: flex;
+	margin-top: 150px;
+
+	flex-wrap: wrap;
+	justify-content:space-between;
+
+
+	div{
+		flex-basis:49.6%;
+		margin-bottom: .5%;
+		a{
+			width: 100%;
+			height: 100%;
+			img{
+			width: 100%;
+			height: 100%;
+			transition:all .3s linear;
+		}
+		}
+
+		a:hover img{
+             
+             opacity: 0.3; 
+
+		}
+		
+	}
+}

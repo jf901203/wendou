@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/*  声明css绝对定位的混合 */
+/* 声明背景图片的css混合 */
+header {
+  width: 100%;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  border: 0px; }
+  header img {
+    width: 100%; }
+
+body {
+  background-color: #f2f2f2; }
+
+.center {
+  width: 100%;
+  float: left;
+  padding: 20px 0px;
+  background-color: #fff;
+  border-bottom: 1px solid #c3c3c3; }
+  .center .center_box {
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between; }
+  .center .center_box > a {
+    flex-basis: 33%;
+    border-right: 1px solid #c2c2c2;
+    text-align: center; }
+    .center .center_box > a span {
+      width: 100%;
+      font-size: 30px;
+      margin-top: 20px; }
+  .center .center_box > a:last-of-type {
+    border: none; }
+
+/*  center end */
+.person_lis {
+  width: 100%;
+  float: left; }
+  .person_lis .container {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 25px 0px; }
+    .person_lis .container .person_lis_box {
+      width: 90%;
+      margin: 0px auto; }
+      .person_lis .container .person_lis_box .per_uls {
+        width: 100%;
+        display: flex;
+        padding: 0px; }
+        .person_lis .container .person_lis_box .per_uls li {
+          flex-basis: 10%; }
+        .person_lis .container .person_lis_box .per_uls li:first-of-type {
+          text-align: center; }
+        .person_lis .container .person_lis_box .per_uls li:nth-of-type(2) {
+          flex: 1;
+          line-height: 52px;
+          font-size: 30px; }
+        .person_lis .container .person_lis_box .per_uls li:last-of-type {
+          line-height: 52px;
+          font-size: 30px;
+          text-align: center;
+          color: #dbdbdb; }
+
+/* person end */
+footer {
+  width: 750px;
+  position: fixed;
+  bottom: 0px;
+  background: #fcfcfc;
+  border-top: 2px solid #c3c3c3; }
+  footer .menu {
+    width: 100%;
+    display: flex;
+    flex-grow: row;
+    justify-content: space-around;
+    padding-bottom: 17px;
+    padding-top: 17px; }
+  footer .menu > a {
+    flex-basis: 80px;
+    text-align: center;
+    font-size: 20px;
+    color: #000; }
+
+/*# sourceMappingURL=index3.css.map */

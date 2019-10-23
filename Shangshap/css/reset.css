@@ -1,0 +1,23 @@
+@charset "UTF-8";
+*{
+	margin: 0px;
+	padding: 0px;
+}
+ul,ol,li{
+	list-style: none;
+}
+a,span,label{
+	display: inline-block;
+	text-decoration: none;
+}
+
+img{
+	border:0px;
+}
+.clear{
+	clear: both;
+}
+body{
+	width: 750px;
+	margin: 0px auto;
+}

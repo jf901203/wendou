@@ -1,0 +1,128 @@
+
+
+/*声明 css相对定位的混合 */
+
+@mixin pr(){
+   
+   position: relative;
+   
+
+}
+
+/*  声明css绝对定位的混合 */
+
+@mixin pa($y,$x){
+
+	position: absolute;
+	top: $y;
+	left:$x;
+}
+
+
+
+/* 声明背景图片的css混合 */
+
+@mixin bgImg($url,$y,$x,$wid){
+
+	background-image: url($url);
+	background-position: $y $x;
+	background-repeat: no-repeat;
+	background-size: $wid;
+
+
+}
+
+@mixin pf($y:0,$x:0){
+
+	position: fixed;
+	top: $y;
+	left: $x;
+}
+/* 底部固定位 */
+@mixin pb($y:0,$x:0){
+
+	position: fixed;
+	bottom: $y;
+	left: $x;
+}
+
+header{
+
+	width:100%;
+	background-color: #582349;
+	
+    @include pf();
+     padding-top: 60px;
+	display: flex;
+	flex-direction:row;
+
+
+	div{
+        
+     flex-basis:20%;
+     text-align: center;
+     line-height: 1px;
+    .header_titel{
+    	font-size: 40px;
+    	color: #fff;
+    }
+
+	}
+	div:nth-of-type(2){
+
+		flex:1;
+	}
+
+	 &:after{
+
+   	  content:"";
+   	  width: 0;
+   	  height: 0;
+   	  display: block;
+   	  overflow: hidden;
+   	  clear: both;
+   }
+}
+
+
+
+.container{
+	margin-top: 170px;
+	width: 100%;
+	.container_box{
+		width: 70%;
+		margin:0px auto;
+		display: flex;
+		flex-direction:column;
+
+	   div{
+
+	    	flex-basis:100%;
+	    
+	    	text-align: center;
+	    	margin-bottom: 50px;
+	    	font-size: 19px;
+		    line-height: 25px;
+	    }
+
+	}
+
+}
+
+
+/* container */
+
+footer{
+
+	width: 100%;
+	@include pb(40px,0px);
+
+	.footer_box{
+		width: 70%;
+		margin: 0px auto;
+		text-align: center;
+		font-size: 19px;
+		line-height: 25px;
+		
+	}
+}

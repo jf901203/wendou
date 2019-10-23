@@ -1,0 +1,297 @@
+@charset "UTF-8";
+/*声明 css相对定位的混合 */
+/*  声明css绝对定位的混合 */
+header {
+  width: 100%;
+  background-image: url("../images/index3_bg.jpg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  float: left;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 90px; }
+  header .head {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between; }
+  header .head > div {
+    flex-basis: 45%; }
+  header .head_nav {
+    flex: 1; }
+  header .head_nav ul li {
+    float: left;
+    color: #fff;
+    margin-left: 30px; }
+  header .head_nav ul li:last-of-type {
+    position: relative; }
+    header .head_nav ul li:last-of-type label {
+      transition: all .3s linear; }
+      header .head_nav ul li:last-of-type label span {
+        width: 14px;
+        border: 2px solid #fff;
+        display: block;
+        margin-top: 2px; }
+    header .head_nav ul li:last-of-type input {
+      display: none; }
+    header .head_nav ul li:last-of-type .nav {
+      position: absolute;
+      top: 20px;
+      left: 0px;
+      display: none;
+      transition: all .5s linear; }
+      header .head_nav ul li:last-of-type .nav a {
+        display: block;
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        color: #fff;
+        text-transform: lowercase;
+        transition: all .3s linear; }
+      header .head_nav ul li:last-of-type .nav a:hover {
+        color: #f57365; }
+    header .head_nav ul li:last-of-type input:checked + label {
+      transform: rotate(90deg); }
+    header .head_nav ul li:last-of-type input:checked ~ .nav {
+      display: block; }
+  header .head_center {
+    width: 80%;
+    margin: 0px auto; }
+    header .head_center .head_center_desc {
+      margin-top: 100px;
+      width: 100%;
+      color: #fff;
+      text-align: center; }
+    header .head_center .head_head {
+      font-style: italic;
+      margin: 0px;
+      padding: 0px;
+      color: #e0d7d8; }
+    header .head_center .head_title {
+      padding: 0px;
+      margin: 0px;
+      font-size: 100px; }
+    header .head_center a {
+      padding: 0px 85px;
+      border: 2px solid #fff;
+      font-size: 18px;
+      line-height: 40px;
+      color: #fff; }
+    header .head_center .head_title_desc {
+      font-size: 14px; }
+
+.container {
+  width: 100%;
+  float: left;
+  background: #fff; }
+  .container .con_box {
+    width: 80%;
+    margin: 0px auto; }
+    .container .con_box .con_box_text {
+      width: 100%;
+      display: flex;
+      margin: 100px 0px;
+      justify-content: space-between; }
+      .container .con_box .con_box_text div {
+        flex-basis: 32%;
+        text-align: center; }
+        .container .con_box .con_box_text div .con_head {
+          width: 100px;
+          height: 100px;
+          border: 3px solid #000;
+          border-radius: 100%;
+          background-image: url("../images/con_head_bg.png");
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: 100% 100%; }
+        .container .con_box .con_box_text div .con_head1 {
+          background-image: url("../images/con_head_bg1.png");
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: 100% 100%; }
+        .container .con_box .con_box_text div .con_head2 {
+          background-image: url("../images/con_head_bg2.png");
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: 100% 100%; }
+        .container .con_box .con_box_text div p {
+          font-size: 14px;
+          word-break: break-all; }
+        .container .con_box .con_box_text div h4 {
+          background-image: url("../images/con_bottom.jpg");
+          background-position: bottom center;
+          background-repeat: no-repeat;
+          line-height: 20px;
+          margin: 0px;
+          padding: 10px 0px;
+          font-size: 12px; }
+
+/*container end */
+.app {
+  width: 100%;
+  background: #f7f7f7;
+  float: left;
+  padding-top: 100px; }
+  .app .app_box {
+    width: 80%;
+    margin: 0px auto; }
+    .app .app_box .app_flex {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+    .app .app_box .app_flex > div {
+      flex-basis: 48%; }
+      .app .app_box .app_flex > div .more a {
+        width: 120px;
+        height: 40px; }
+      .app .app_box .app_flex > div .more a:nth-of-type(1) {
+        background-image: url("../images/more1.jpg");
+        background-position: center center;
+        background-repeat: no-repeat; }
+      .app .app_box .app_flex > div .more a:nth-of-type(2) {
+        background-image: url("../images/more2.jpg");
+        background-position: center center;
+        background-repeat: no-repeat; }
+    .app .app_box .iphone_bg {
+      background-image: url("../images/iphon_bg.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%; }
+    .app .app_box .app_flex_desc {
+      margin-bottom: 80px; }
+      .app .app_box .app_flex_desc h4 {
+        margin-top: 70px;
+        line-height: 25px;
+        padding: 10px 0px;
+        background-image: url("../images/con_bottom.jpg");
+        background-position: left bottom;
+        background-repeat: no-repeat; }
+      .app .app_box .app_flex_desc p {
+        font-size: 12px;
+        word-break: break-all; }
+
+/* app end */
+.banner {
+  width: 100%;
+  float: left;
+  padding: 0px;
+  margin: 0px; }
+
+.banner_box {
+  width: 100%;
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px; }
+  .banner_box input {
+    display: none; }
+  .banner_box label {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #756975;
+    cursor: pointer;
+    z-index: 9999;
+    transition: all .3s linear; }
+  .banner_box #demo1 {
+    left: 48%; }
+  .banner_box #demo3 {
+    left: 52%; }
+  .banner_box .banner_boxs {
+    width: 300%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s linear; }
+  .banner_box input[type="radio"]:checked + label {
+    background: #fff; }
+  .banner_box #btn1:checked ~ .banner_boxs {
+    left: 0%; }
+  .banner_box #btn2:checked ~ .banner_boxs {
+    left: -100%; }
+  .banner_box #btn3:checked ~ .banner_boxs {
+    left: -200%; }
+  .banner_box .banner_boxs > div {
+    flex-basis: 33.3%; }
+    .banner_box .banner_boxs > div img {
+      width: 100%; }
+
+/* banner end */
+.browse {
+  width: 100%;
+  float: left; }
+  .browse .browse_title {
+    width: 100%;
+    text-align: center; }
+    .browse .browse_title h4 {
+      margin-top: 100px;
+      line-height: 25px;
+      padding: 10px 0px;
+      background-image: url("../images/con_bottom.jpg");
+      background-position: center bottom;
+      background-repeat: no-repeat; }
+  .browse .browse_img {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+  .browse .browse_img > div {
+    flex-basis: 20%;
+    text-align: center; }
+    .browse .browse_img > div img {
+      width: 100%;
+      transition: all .3s linear; }
+    .browse .browse_img > div img:hover {
+      opacity: .5; }
+
+/* browse end*/
+.number {
+  width: 100%;
+  float: left; }
+  .number .number_box {
+    width: 80%;
+    margin: 0px auto; }
+    .number .number_box .number_box_child {
+      width: 100%;
+      display: flex; }
+    .number .number_box .number_box_child > div {
+      flex-basis: 20%;
+      text-align: center; }
+      .number .number_box .number_box_child > div h2 {
+        margin-top: 60px;
+        margin-bottom: 0px;
+        padding: 0px; }
+      .number .number_box .number_box_child > div p {
+        margin: 0px;
+        font-size: 14px; }
+
+/*number end*/
+footer {
+  width: 100%;
+  float: left;
+  background: #f7f7f7;
+  border-top: 1px solid #e2e2e2;
+  padding: 40px 0px; }
+  footer .foot_box {
+    width: 80%;
+    margin: 0px auto; }
+    footer .foot_box .foot_box_child {
+      width: 100%;
+      display: flex; }
+    footer .foot_box .foot_box_child > div {
+      flex-basis: 50%;
+      color: #c5c5c5;
+      font-size: 14px; }
+    footer .foot_box .foot_box_child > div:last-child {
+      text-align: right; }
+      footer .foot_box .foot_box_child > div:last-child span {
+        color: #000;
+        font-weight: bold; }
+
+/*# sourceMappingURL=index3.css.map */

@@ -1,0 +1,263 @@
+
+
+@mixin pr(){
+   
+   position: relative;
+   
+
+}
+
+/*  声明css绝对定位的混合 */
+
+@mixin pa($y,$x){
+
+	position: absolute;
+	top: $y;
+	left:$x;
+}
+
+/* 声明背景图片的css混合 */
+
+@mixin bgImg($url,$y,$x,$wid){
+
+	background-image: url($url);
+	background-position: $y $x;
+	background-repeat: no-repeat;
+	background-size: $wid;
+
+
+}
+@mixin bgImgs($url,$y,$x){
+
+  background-image: url($url);
+  background-position: $y $x;
+  background-repeat: no-repeat;
+}
+
+@mixin pf($y:0,$x:0){
+	position: fixed;
+	top: $y;
+	left: $x;
+}
+@mixin pfs($y:0,$x:0){
+	position: fixed;
+	bottom: $y;
+	left: $x;
+}
+header{
+    
+    width:750px;;
+    position: fixed;
+    top: 0px;
+    /* left: 0px; */
+	background:#fece02;
+	padding: 17px 0px;
+	z-index: 9999;
+	.search{
+		width: 90%;
+		margin: 0px auto;
+		display: flex;
+	}
+	.search>div{
+         flex-basis:20%;
+         text-align: center;
+	}
+	.search>div:last-child{
+		flex:1;
+	}
+	.search_right{
+		display: flex;
+
+	}
+	.search_right>div{
+		flex-basis:15%;
+		.mar_top{
+			margin-top: 10px;
+		}
+	}
+	.search_right>div:first-child{
+		flex:1;
+		input{
+			width: 100%;
+			height: 67px;
+			background-color: #fece02;
+			border: 0px;
+			text-indent: 50px;
+			font-size: 30px;
+
+			@include bgImg('../images/search_bg.png',left,center,100%);
+			&::placeholder {
+	             color: #fff;
+	             font-size: 30px;
+
+              }
+
+		}
+		
+	}
+}
+
+/* header end */
+
+.banner{
+	
+	width: 100%;
+	float: left;
+	padding: 0px;
+	margin:0px;
+	margin-top: 95px;
+	img{
+		width: 100%;
+		border: 0px;
+	}
+
+
+}
+/*banner end*/
+
+.center{
+	width: 100%;
+	float: left;
+	padding-bottom: 28px;
+	border-bottom:1px solid #d3d3d3;
+
+	.center_box{
+		width: 90%;
+		margin:0px auto;
+		display: flex;
+		margin-top: 20px;
+		
+        
+	}
+	.center_box>a{
+
+		flex-basis:25%;
+		display: block;
+		text-align: center;
+		font-size: 24px;
+        color:#000;
+        transition:all .3s linear;
+        img{
+        	
+        	width: 100%;
+        }
+	}
+
+}
+
+
+.center_box>a:hover{
+
+	   transform: rotateY(360deg);
+}
+
+
+
+
+/* center end */
+.fresh{
+	width: 100%;
+	float: left;
+	background: #f8f8f8;
+
+	.fresh_box{
+		width: 90%;
+		margin:0px auto;
+		display: flex;
+		background:#fff;
+		padding: 39px 0px 32px;
+		border: 1px solid #d3d3d3;
+		margin-bottom: 20px;
+	}
+     .fresh_box:first-of-type{
+         margin-top: 20px;
+     }
+	.fresh_box>div{
+        flex-basis:50%;
+
+	}
+	.fresh_box>div:first-child{
+
+		 .fresh_box_title{
+		 	margin-left: 20px;
+		 	h2{
+		 		color: #f04e92;
+		 		font-size: 42px;
+		 		margin: 0px;
+		 		padding: 0px;
+		 	}
+		 	h2.fresh_color{
+		 		color: #66cee6;
+		 		font-size: 42px;
+		 		margin: 0px;
+		 		padding: 0px;
+		 	}
+		 	h3{
+		 		color: #3e3e3e;
+		 		font-size: 20px;
+		 	}
+		 	h3>span:first-of-type{
+
+		 			font-size:60px;
+		 			color: #eb4f89;
+		 			margin: 0px;
+		 		}
+		 	h3>span:last-of-type{
+
+		 			font-size:30px;
+		 			color: #eb4f89;
+		 			margin: 0px;
+		 		}
+
+		 		h3>span.money_color{
+		 			color: #3bd7f9;
+		 		}
+
+
+
+		 	.fresh_desc{
+                  
+                  color: #818181;
+                  font-size: 20px;
+                  span:last-of-type{
+                  	margin-left: 20px;
+                  }
+
+		 		}
+		 }
+	}
+}
+
+.fresh>div:last-of-type{
+	margin-bottom: 158px;
+}
+
+/*fresh end*/
+
+footer{
+  width: 750px;
+  position: fixed;
+  bottom: 0px;
+ 
+  background:#fcfcfc;
+  border-top: 2px solid #c3c3c3;
+  .menu{
+
+  width: 100%;
+  display: flex;
+  flex-grow:row;
+  justify-content:space-around;
+  padding-bottom: 17px;
+  padding-top: 17px;
+}
+.menu > a{
+  flex-basis:80px;
+  text-align: center;
+  font-size: 20px;
+  color:#000;
+
+
+}
+
+}
+
